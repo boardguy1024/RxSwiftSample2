@@ -13,6 +13,9 @@
 		A229CB3C1F51D79900D51C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A229CB3A1F51D79900D51C1B /* Main.storyboard */; };
 		A229CB3E1F51D79900D51C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A229CB3D1F51D79900D51C1B /* Assets.xcassets */; };
 		A229CB411F51D79900D51C1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A229CB3F1F51D79900D51C1B /* LaunchScreen.storyboard */; };
+		A229CB4E1F51D9E300D51C1B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229CB4D1F51D9E300D51C1B /* Item.swift */; };
+		A229CB501F51D9FB00D51C1B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229CB4F1F51D9FB00D51C1B /* ViewModel.swift */; };
+		A229CB521F51DA5100D51C1B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229CB511F51DA5100D51C1B /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A229CB3D1F51D79900D51C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A229CB401F51D79900D51C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A229CB421F51D79900D51C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A229CB4D1F51D9E300D51C1B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A229CB4F1F51D9FB00D51C1B /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A229CB511F51DA5100D51C1B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		C72084D0970EADC127D0E4E0 /* Pods-RxSwift_Sample2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift_Sample2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift_Sample2/Pods-RxSwift_Sample2.debug.xcconfig"; sourceTree = "<group>"; };
 		FE1B9BB0B7AF6BB4CC4B72F7 /* Pods-RxSwift_Sample2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift_Sample2.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift_Sample2/Pods-RxSwift_Sample2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,13 +68,64 @@
 			isa = PBXGroup;
 			children = (
 				A229CB361F51D79900D51C1B /* AppDelegate.swift */,
+				A229CB4B1F51D9AD00D51C1B /* Model */,
+				A229CB481F51D98800D51C1B /* View */,
+				A229CB4A1F51D9A000D51C1B /* ViewModel */,
+				A229CB491F51D99300D51C1B /* Controller */,
+				A229CB531F51DA7E00D51C1B /* StoryBoard */,
+				A229CB541F51DAA200D51C1B /* Supporting Files */,
+			);
+			path = RxSwift_Sample2;
+			sourceTree = "<group>";
+		};
+		A229CB481F51D98800D51C1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A229CB511F51DA5100D51C1B /* CustomTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A229CB491F51D99300D51C1B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				A229CB381F51D79900D51C1B /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A229CB4A1F51D9A000D51C1B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A229CB4F1F51D9FB00D51C1B /* ViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		A229CB4B1F51D9AD00D51C1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A229CB4D1F51D9E300D51C1B /* Item.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A229CB531F51DA7E00D51C1B /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
 				A229CB3A1F51D79900D51C1B /* Main.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		A229CB541F51DAA200D51C1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				A229CB3D1F51D79900D51C1B /* Assets.xcassets */,
 				A229CB3F1F51D79900D51C1B /* LaunchScreen.storyboard */,
 				A229CB421F51D79900D51C1B /* Info.plist */,
 			);
-			path = RxSwift_Sample2;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C04224CAAE14F640C28CC8F8 /* Pods */ = {
@@ -213,6 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A229CB391F51D79900D51C1B /* ViewController.swift in Sources */,
+				A229CB521F51DA5100D51C1B /* CustomTableViewCell.swift in Sources */,
+				A229CB4E1F51D9E300D51C1B /* Item.swift in Sources */,
+				A229CB501F51D9FB00D51C1B /* ViewModel.swift in Sources */,
 				A229CB371F51D79900D51C1B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +441,7 @@
 				A229CB471F51D79900D51C1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
