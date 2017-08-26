@@ -10,5 +10,6 @@ import Foundation
 
 struct Item {
     
-    
+    var imageUrl: String
+    var title: String
 }
